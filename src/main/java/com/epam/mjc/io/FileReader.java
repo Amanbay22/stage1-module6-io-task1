@@ -7,11 +7,7 @@ import java.io.IOException;
 
 public class FileReader {
 
-    public static void main(String[] args) {
-        System.out.println(getDataFromFile(new File("src/main/resources/Profile.txt")));
-    }
-
-    public static Profile getDataFromFile(File file) {
+    public Profile getDataFromFile(File file) {
         Profile profile = new Profile();
 
         try(FileInputStream fileInputStream = new FileInputStream(file)) {
