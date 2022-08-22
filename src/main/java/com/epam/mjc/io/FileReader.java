@@ -34,6 +34,7 @@ public class FileReader {
                         case "Phone":
                             profile.setPhone(Long.valueOf(split[1].trim()));
                             break;
+                        default:break;
                     }
                     s = new StringBuilder();
                 }
